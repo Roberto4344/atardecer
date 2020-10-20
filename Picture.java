@@ -48,13 +48,6 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
-
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
-        sun.makeVisible();
         
         grass = new Square();
         grass.changeColor("green");
@@ -62,6 +55,18 @@ public class Picture
         grass.moveVertical(140);
         grass.moveHorizontal(-450);
         grass.makeVisible();
+
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(50);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(-200);
+        
+        
+        
+        
     }
 
     /**
