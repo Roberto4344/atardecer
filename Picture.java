@@ -70,16 +70,14 @@ public class Picture
     }
 
     /**
-     * Change this picture to black/white display
+     * Mueve el sol hacia abajo
      */
-    public void setBlackAndWhite()
+    public void setAfternoon()
     {
-        if (wall != null)   // only if it's painted already...
+        if (sun != null)   // only if it's painted already...
         {
-            wall.changeColor("black");
-            window.changeColor("white");
-            roof.changeColor("black");
-            sun.changeColor("black");
+          sun.moveHorizontal(100);
+          sun.slowMoveVertical(200);
         }
     }
 
